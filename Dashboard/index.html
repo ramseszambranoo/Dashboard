@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="src/output.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-gradient-to-b to-[#0B1827] from-[#7f94ad]">
+  <input class="hidden peer/menu" type="checkbox" name="menu-mobile" id="menu-mobile">
+
+  <!--HEADER-->
+  <nav class="animate__animated animate__fadeInDown w-full h-[80px] z-9 top-0 py-[10px] px-[30px]">
+    <div class="w-full h-full rounded-2xl bg-white px-[20px] flex items-center justify-between">
+      <!--opciones izquierda-->
+      <div class="flex gap-3.5 w-full">
+        <label class="cursor-pointer" for="menu-mobile"><img class="h-[30px]" src="images/MH.png" alt="menu"></label>
+        <!--buscador-->
+        <section class="flex gap-1.5 w-full">
+          <img class="h-[30px]" src="images/L.png" alt="lupa">
+          <input class="rounded-3xl w-full px-[10px] hidden lg:flex focus:border-none focus:outline-none" type="text" src="images/L.png" placeholder="type to search">
+        </section>
+      </div>
+      <!--opciones derecha-->
+      <div class="flex justify-end gap-3.5 w-full">
+        <a href="https://github.com/ramseszambranoo">
+        <img class="h-[30px] cursor-pointer" src="images/GITHUB.png" alt="github"></a>
+        <img class="h-[30px] cursor-pointer" src="images/CAMPANA.png" alt="campana">
+        <img class="h-[30px] cursor-pointer" src="images/USER.png" alt="user">
+      </div>
+    </div>
+
+  </nav>
+  <!--BARRA LATERAL-->
+  <section class="shadow-2xl h-full w-[300px] bg-gradient-to-br from-[#0B1827] to-[#394553] fixed left-0 top-0 z-8 translate-x-[-300px] peer-checked/menu:translate-x-0 duration-500 ease-in-out">
+    <!--cerrar-->
+    <div class="w-full h-auto flex justify-between items-center text-white px-[20px] py-[30px]">
+      <h2 class="text-[18px] font-bold">Welcome back, Ramses</h2>
+      <label for="menu-mobile"><img class="h-[30px] p-[5px] rounded-2xl cursor-pointer hover:bg-[#212a3a]" src="images/x.png" alt="menu"></label>
+    </div>
+    <!--lista de opciones barra lateral-->
+    <div class="w-full h-auto flex flex-col justify-between items-center text-white cursor-pointer gap-3.5">
+      <img class="px-[20px]" src="images/tarjeta-virtual-bbva.png" alt="">
+      <ul class="w-full h-auto">
+        <li class="flex w-full items-center justify-start gap-3.5 py-[10px] px-[20px] hover:bg-[#212a3a]"><img class="h-[30px]" src="images/home.png" alt="home"><h3 class="font-bold">Dashboard</h3></li>
+        <li class="flex w-full items-center justify-start gap-3.5 py-[10px] px-[20px] hover:bg-[#212a3a]"><img class="h-[30px]" src="images/card.png" alt="home"><h3 class="font-bold">Cards</h3></li>
+        <li class="flex w-full items-center justify-start gap-3.5 py-[10px] px-[20px] hover:bg-[#212a3a]"><img class="h-[30px]" src="images/cartera.png" alt="home"><h3 class="font-bold">Accounts</h3></li>
+        <li class="flex w-full items-center justify-start gap-3.5 py-[10px] px-[20px] hover:bg-[#212a3a]"><img class="h-[30px]" src="images/analiticas.png" alt="home"><h3 class="font-bold">Analytics</h3></li>
+        <li class="flex w-full items-center justify-start gap-3.5 py-[10px] px-[20px] hover:bg-[#212a3a]"><img class="h-[30px]" src="images/pagos.png" alt="home"><h3 class="font-bold">Payments</h3></li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="animate__animated animate__fadeInUp">
+    <!--Cuenta y Dinero-->
+    <div class="w-full h-full lg:h-[170px] flex flex-col justify-center items-center lg:flex-row gap-3 px-[30px]">
+      <!--BIENVENIDO UDUARIO-->
+      <div class="w-full bg-white h-full rounded-2xl p-[20px] flex flex-row justify-start items-center gap-3.5">
+        <div class=" h-full flex justify-center items-center"><img class="w-[150px] rounded-[50%]" src="images/imagen persona.jpg" alt=""></div>
+        <div class="w-full h-full  flex flex-col justify-center items-center">
+          <p class="w-full text-start font-bold text-[25px] text-back relative" >Welcome back, Ramses</p>
+          <p class="w-full text-start font-bold text-[19px] text-[#7F7F7F]" >You last login: 04/05/2025</p>
+        </div>
+      </div>
+      <!--SALDO DISPONIBLE-->
+      <div class="w-full bg-white h-full rounded-2xl p-[20px] flex flex-col justify-center items-start">
+        <p class="w-full text-start font-bold text-[19px] text-[#7F7F7F]">Total Balance</p>
+        <section class="flex gap-5.5">
+        <div class="border-x-green-500">
+          <h3 class="text-black font-bold text-[50px]">$5,230.45</h3>
+        </div>
+        <div class="flex justify-center items-center">
+          <p class="rounded-2xl p-[2px] px-[10px] outline-emerald-500 outline-2 text-emerald-500 text-end font-bold">+ 8,2%</p>
+        </div>
+        </section>
+        <p class="text-[#7F7F7F]">Available in your account</p>
+      </div>
+      <!--MES ANTERIOR-->
+      <div class="w-full bg-white h-full rounded-2xl p-[20px] flex flex-col justify-center items-start">
+        <p class="w-full text-start font-bold text-[19px] text-[#7F7F7F]">Monthly Spending</p>
+        <section class="flex gap-5.5">
+        <div>
+          <h3 class="text-black font-bold text-[50px]">$2,569.25</h3>
+        </div>
+        <div class="flex justify-center items-center">
+          <p class="rounded-2xl p-[2px] px-[10px] outline-red-500 outline-2 text-red-500 text-end font-bold">- 2,2%</p>
+        </div>
+        </section>
+        <p class="text-[#7F7F7F]">Compared to last month</p>
+      </div>
+      
+    </div>
+    <!--Analiticas y Pagos-->
+    <div class="w-full flex flex-col lg:flex-row h-full gap-3.5 px-[30px] mt-3">
+      <!--SECCION DE GRAFICO-->
+      <div class="w-full h-full bg-white p-[30px] rounded-2xl flex justify-center items-center flex-col">
+        <section class="flex justify-start items-center p-[5px] w-full">
+          <h2 class="text-[25px] font-bold text-start">Analitycs</h2>
+        </section>
+        <section class="flex justify-start items-center p-[5px] w-full">
+          <img class="h-auto" src="images/GRAFICO.png" alt="grafico.png">
+        </section>
+      </div>
+      <!--SECCION DE PAGOS -->
+      <div class="w-full h-auto bg-white p-[30px] rounded-2xl object-cover">
+        <section class="flex justify-between items-center p-[5px]">
+          <h2 class="text-[25px] font-bold">Recent Transactions</h2>
+          <p class="bg-[#0B1827] p-[5px] rounded-[10px] text-white">View All</p>
+        </section>
+        <!--LISTA TRANSFERENCIA-->
+        <section>
+          <ul class="flex flex-col justify-center items-center w-full h-full p-[10px] gap-5.5">
+            <!--TRANSFERENCIA 1-->
+            <li class="flex flex-row justify-between items-center w-full">
+              <!--DATOS DE LA PERSONA-->
+              <section class="flex gap-3.5">
+                <img class="h-[50px] rounded-[50%]" src="images/AC.png" alt="AC">
+                <div>
+                  <p class="text-[#7F7F7F] font-bold">Alejando Carrillo</p>
+                  <p class="text-[#7F7F7F]">12/04/2025</p>
+                </div>
+              </section>
+              <!--DINERO ENVIADO O RECIBIDO-->
+              <section class="flex fle-row gap-3.5">
+                <p class="text-[#00BC7D] font-bold">+$100.00</p>
+                <p class="bg-white outline-1 outline-[#00BC7D] rounded-2xl px-[10px] text-[#00BC7D] font-bold">Received</p>
+              </section>
+            </li>
+            <!--TRANSFERENCIA 2-->
+            <li class="flex flex-row justify-between items-center w-full">
+              <!--DATOS DE LA PERSONA-->
+              <section class="flex gap-3.5">
+                <img class="h-[50px] rounded-[50%]" src="images/FA.png" alt="AC">
+                <div>
+                  <p class="text-[#7F7F7F] font-bold">Fady Afisa</p>
+                  <p class="text-[#7F7F7F]">21/03/2025</p>
+                </div>
+              </section>
+              <!--DINERO ENVIADO O RECIBIDO-->
+              <section class="flex fle-row gap-3.5">
+                <p class="text-[#00BC7D] font-bold">+$895.00</p>
+                <p class="bg-white outline-1 outline-[#00BC7D] rounded-2xl px-[10px] text-[#00BC7D] font-bold">Received</p>
+              </section>
+            </li>
+            <!--TRANSFERENCIA 3-->
+            <li class="flex flex-row justify-between items-center w-full">
+              <!--DATOS DE LA PERSONA-->
+              <section class="flex gap-3.5">
+                <img class="h-[50px] rounded-[50%]" src="images/BA.png" alt="AC">
+                <div>
+                  <p class="text-[#7F7F7F] font-bold">Benito Andres</p>
+                  <p class="text-[#7F7F7F]">19/03/2025</p>
+                </div>
+              </section>
+              <!--DINERO ENVIADO O RECIBIDO-->
+              <section class="flex fle-row gap-3.5">
+                <p class="text-red-500 font-bold">-$599.21</p>
+                <p class="bg-white outline-1 outline-red-500 rounded-2xl px-[10px] text-red-500 font-bold">Sent</p>
+              </section>
+            </li>
+            <!--TRANSFERENCIA 4-->
+            <li class="flex flex-row justify-between items-center w-full">
+              <!--DATOS DE LA PERSONA-->
+              <section class="flex gap-3.5">
+                <img class="h-[50px] rounded-[50%]" src="images/JR.png" alt="AC">
+                <div>
+                  <p class="text-[#7F7F7F] font-bold">Jose Ramon</p>
+                  <p class="text-[#7F7F7F]">13/03/2025</p>
+                </div>
+              </section>
+              <!--DINERO ENVIADO O RECIBIDO-->
+              <section class="flex fle-row gap-3.5">
+                <p class="text-red-500 font-bold">-$30.00</p>
+                <p class="bg-white outline-1 outline-red-500 rounded-2xl px-[10px] text-red-500 font-bold">Sent</p>
+              </section>
+            </li>
+            <!--TRANSFERENCIA 5-->
+            <li class="flex flex-row justify-between items-center w-full">
+              <!--DATOS DE LA PERSONA-->
+              <section class="flex gap-3.5">
+                <img class="h-[50px] rounded-[50%]" src="images/EL.png" alt="AC">
+                <div>
+                  <p class="text-[#7F7F7F] font-bold">Emilio Lovera</p>
+                  <p class="text-[#7F7F7F]">11/02/2025</p>
+                </div>
+              </section>
+              <!--DINERO ENVIADO O RECIBIDO-->
+              <section class="flex fle-row gap-3.5">
+                <p class="text-[#00BC7D] font-bold">+$1,591.00</p>
+                <p class="bg-white outline-1 outline-[#00BC7D] rounded-2xl px-[10px] text-[#00BC7D] font-bold">Received</p>
+              </section>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <!--PIE DE PAGINA-->
+  <footer class="z-5 w-full h-auto flex flex-col bg-[#0B1827] justify-center items-center p-[20px] gap-1.5 mt-3">
+    <p class="text-white">© Todos los derechos reservados | Ramses Zambrano</p>
+    <section class="flex justify-center items-center gap-3.5 cursor-pointer">
+    <a class="hover:bg-[#1f2b3a] rounded-[5px] hover:scale-105 duration-200" href="https://www.instagram.com/ramseszambranoo/"><img class="h-[40px] p-[5px]" src="images/instagram.png" alt="ig"></a>
+    <a class="hover:bg-[#1f2b3a] rounded-[5px] hover:scale-105 duration-200" href="#"><img class="h-[35px] p-[5px]" src="images/GHW.png" alt="gb"></a>
+    <a class="hover:bg-[#1f2b3a] rounded-[5px] hover:scale-105 duration-200" href="https://github.com/ramseszambranoo"><img class="h-[35px] p-[5px]" src="images/web.png" alt="web"></a>
+    </section>
+  </footer>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
